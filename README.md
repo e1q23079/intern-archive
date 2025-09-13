@@ -63,6 +63,12 @@ npm run dev
 npm run start
 ```
 
+#### Storybook
+
+```bash
+npm run storybook
+```
+
 ### GitHub Pages設定
 
 - Build and deployment
