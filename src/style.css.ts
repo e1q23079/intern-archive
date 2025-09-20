@@ -1,8 +1,8 @@
 import { style } from "@vanilla-extract/css";
 
-// タイトル
-export const title = style({
-    fontSize: "24px",
-    fontWeight: "bold",
-    marginBottom: "16px",
+// 背景画面
+export const backScreen = style({
+    position: "absolute",
+    width: "100vw",
+    height: "100vh",
 });
