@@ -34,12 +34,3 @@ export const backScreen = style({
     width: "100vw",
     height: "100vh",
 });
-
-// リスト背景
-export const listBackStyle = style({
-    position: "absolute",
-    width: "90vw",
-    height: "72vh",
-    top: "15vh",
-    left: "5vw",
-});

@@ -5,8 +5,8 @@ import Introduction from "./page/introduction";
 
 // import { useEffect, useState } from "react"
 
-import { styles } from "./style.css"
-// import FadeInOutOne from "./animation/back_screen/FadeInOut"
+// import { styles } from "./style.css"
+// // import FadeInOutOne from "./animation/back_screen/FadeInOut"
 
 
 const App = () => {

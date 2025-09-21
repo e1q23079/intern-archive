@@ -1,5 +1,5 @@
 import BackBtn from "../components/back-btn";
-import { backBtnStyle, listBackStyle, nextBtnStyle, preBtnStyle, statusBarStyle } from "./home.css";
+import { backBtnStyle, nextBtnStyle, preBtnStyle, statusBarStyle } from "./home.css";
 
 import back from "../assets/back.png";
 import { backScreen } from "./start.css";
@@ -7,7 +7,6 @@ import PreBtn from "../components/pre-btn";
 import NextBtn from "../components/next-btn";
 import StatusBar from "../components/status-bar";
 
-import listBackImg from "../assets/list-back.png";
 import FadeOutRedirect from "../animation/FadeOutRedirect";
 import { useState } from "react";
 import FadeInSc from "../animation/FadeInSc";
@@ -32,7 +31,6 @@ const HomePage = () => {
                     <div className={statusBarStyle}>
                         <StatusBar></StatusBar>
                     </div>
-                    <img src={listBackImg} alt="list back" className={listBackStyle} draggable={false} />
                     <div className={preBtnStyle}>
                         <PreBtn></PreBtn>
                     </div>
