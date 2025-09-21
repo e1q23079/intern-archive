@@ -11,7 +11,7 @@ const FadeInSc = ({ children }: FadeInScProps) => {
         <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 1, ease: "easeIn" }}
+            transition={{ duration: 0.5, delay: 0, ease: "easeIn" }}
         >
             {children}
         </motion.div>

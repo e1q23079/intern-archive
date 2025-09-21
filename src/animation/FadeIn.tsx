@@ -11,7 +11,7 @@ const FadeIn = ({ children }: FadeInProps) => {
         <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 3, delay: 1, ease: "easeInOut" }}
+            transition={{ duration: 3, delay: 1.5, ease: "easeInOut" }}
         >
             {children}
         </motion.div>

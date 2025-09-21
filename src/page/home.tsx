@@ -10,6 +10,7 @@ import StatusBar from "../components/status-bar";
 import listBackImg from "../assets/list-back.png";
 import FadeOutRedirect from "../animation/FadeOutRedirect";
 import { useState } from "react";
+import FadeInSc from "../animation/FadeInSc";
 
 const HomePage = () => {
 
@@ -22,22 +23,24 @@ const HomePage = () => {
     return (
 
         <>
-            <FadeOutRedirect redirectUrl="#" trigger={status}>
-                <img src={back} alt="start screen back 02" className={backScreen} draggable={false} />
-                <div className={backBtnStyle} onClick={backBtn}>
-                    <BackBtn></BackBtn>
-                </div>
-                <div className={statusBarStyle}>
-                    <StatusBar></StatusBar>
-                </div>
-                <img src={listBackImg} alt="list back" className={listBackStyle} draggable={false} />
-                <div className={preBtnStyle}>
-                    <PreBtn></PreBtn>
-                </div>
-                <div className={nextBtnStyle}>
-                    <NextBtn></NextBtn>
-                </div >
-            </FadeOutRedirect>
+            <FadeInSc>
+                <FadeOutRedirect redirectUrl="#" trigger={status}>
+                    <img src={back} alt="start screen back 02" className={backScreen} draggable={false} />
+                    <div className={backBtnStyle} onClick={backBtn}>
+                        <BackBtn></BackBtn>
+                    </div>
+                    <div className={statusBarStyle}>
+                        <StatusBar></StatusBar>
+                    </div>
+                    <img src={listBackImg} alt="list back" className={listBackStyle} draggable={false} />
+                    <div className={preBtnStyle}>
+                        <PreBtn></PreBtn>
+                    </div>
+                    <div className={nextBtnStyle}>
+                        <NextBtn></NextBtn>
+                    </div >
+                </FadeOutRedirect>
+            </FadeInSc>
         </>
     );
 }
