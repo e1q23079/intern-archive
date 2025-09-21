@@ -7,6 +7,20 @@ export const backBtnStyle = style({
     left: "1.3vw",
 });
 
+// 進ボタン
+export const nextBtnStyle = style({
+    position: "absolute",
+    bottom: "0vh",
+    right: "1.3vw",
+});
+
+// 戻るボタン
+export const preBtnStyle = style({
+    position: "absolute",
+    bottom: "0vh",
+    left: "1.3vw",
+});
+
 // 背景画面
 export const backScreen = style({
     position: "absolute",

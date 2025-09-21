@@ -13,8 +13,6 @@ const Tap = ({ children }: TapProps) => {
             style={{
                 display: "inline-block",
                 transformOrigin: "center",
-                width: "100%",
-                height: "100%",
             }}
         >
             {children}
