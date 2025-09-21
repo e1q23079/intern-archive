@@ -2,7 +2,10 @@ import { style } from "@vanilla-extract/css";
 
 const startBtn = style({
     position: "absolute",
-    fontSize: '24px',
+    fontFamily: 'NsimSun, serif',
+    fontWeight: 'bold',
+    fontSize: '36px',
+    textShadow: '2px 2px 4px #C1E5F5',
 });
 
 const styles = { startBtn };
