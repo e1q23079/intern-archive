@@ -7,8 +7,15 @@ import List from '../components/list';
 const meta: Meta<typeof List> = {
     title: 'List',
     component: List,
+    argTypes: {
+        num: { type: 'number' },
+    },
 };
 
 export default meta;
 
-export const ListStory = {};
+export const ListStory = {
+    args: {
+        num: 2
+    }
+};

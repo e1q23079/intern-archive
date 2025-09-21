@@ -44,6 +44,18 @@ const List = ({ num }: ListProps) => {
             </>
         )
 
+    } else if (isNum === 2) {
+        return (<>
+            <div className={styles.listBackStyle}>
+                {/* <img src={listBackImg} alt="list back" draggable={false} /> */}
+                <div className={styles.listGridStyle}>
+                    <Card title="株式会社G" date="2024/0X/XX~2024/XX/XX" img={sampleImg} />
+                    <Card title="株式会社H" date="2025/0X/XX~2025/XX/XX" img={sampleImg} />
+                    <Card title="株式会社I" date="2023/0X/XX~2023/XX/XX" img={sampleImg} />
+                </div>
+            </div >
+        </>
+        )
     }
 };
 

@@ -25,7 +25,7 @@ const HomePage = () => {
 
 
     const next = () => {
-        setNowPage((prevPage) => (prevPage < 1 ? prevPage + 1 : prevPage));
+        setNowPage((prevPage) => (prevPage < 2 ? prevPage + 1 : prevPage));
     };
 
     const pre = () => {
