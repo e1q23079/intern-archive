@@ -6,7 +6,6 @@ const List = () => {
     return (
         <>
             <div className={styles.listBackStyle}>
-                {/* <img src={listBackImg} alt="list back" draggable={false} /> */}
                 <div className={styles.listGridStyle}>
                     <div className={styles.listItemStyle}>
                         <div className={styles.twoColumnGridStyle}>

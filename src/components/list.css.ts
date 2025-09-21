@@ -7,6 +7,9 @@ const listBackStyle = style({
     height: "72vh",
     top: "15vh",
     left: "5vw",
+    backgroundColor: "#002060d5",
+    padding: "2vw",
+    borderRadius: "10px",
 });
 
 // グリッド
