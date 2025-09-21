@@ -8,9 +8,16 @@ import back_screen02 from '../assets/back_screen02.png'
 import { backScreen } from './start.css.ts'
 
 const StartPage = () => {
+
+    const start = () => {
+        setTimeout(() => {
+            window.location.href = "#/home"
+        }, 2000);
+    }
+
     return (
         <>
-            <a href='#/home'>
+            <div onClick={start}>
                 {/* 昼 */}
                 <img src={back_screen01} alt="start screen back 01" className={backScreen} draggable={false} />
                 {/* 夜 */}
@@ -18,7 +25,7 @@ const StartPage = () => {
                     <img src={back_screen02} alt="start screen back 02" className={backScreen} draggable={false} />
                 </FadeIn >
                 <StartBtn></StartBtn>
-            </a>
+            </div>
         </>
     );
 }
