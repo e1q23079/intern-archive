@@ -1,6 +1,6 @@
 import { Routes, Route, HashRouter } from "react-router-dom"
-import StartPage from "./page/start-page"
-import HomePage from "./page/home-page"
+import StartPage from "./page/start"
+import HomePage from "./page/home"
 
 const App = () => {
   return (
