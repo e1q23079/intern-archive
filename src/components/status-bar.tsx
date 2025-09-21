@@ -6,6 +6,8 @@ const StatusBar = () => {
 
     const [skill, setSkill] = useState("null");
 
+    const [name, setName] = useState("null");
+
     useEffect(() => {
 
         const requestOptions = {
@@ -20,7 +22,10 @@ const StatusBar = () => {
                 }
                 return response.json();
             })
-            .then((result) => setSkill(result.public_repos))
+            .then((result) => {
+                setSkill(result.public_repos);
+                setName(result.name);
+            })
             .catch((error) => console.error(error));
     }, []);
 
@@ -30,7 +35,7 @@ const StatusBar = () => {
                 <img src={statusBarImg} className={styles.statusBar} alt="status-bar" draggable={false} />
                 <div className={`${styles.grid} ${styles.statusText}`}>
                     <div className={styles.skill}>{skill}</div>
-                    <div>Q23079</div>
+                    <div>{name}</div>
                 </div>
             </div>
         </>
