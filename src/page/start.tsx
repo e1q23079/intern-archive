@@ -11,7 +11,7 @@ const StartPage = () => {
 
     const start = () => {
         setTimeout(() => {
-            window.location.href = "#/home"
+            window.location.href = "#home"
         }, 2000);
     }
 
