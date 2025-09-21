@@ -26,10 +26,12 @@ const StatusBar = () => {
 
     return (
         <>
-            <img src={statusBarImg} className={styles.statusBar} alt="status-bar" draggable={false} />
-            <div className={`${styles.grid} ${styles.statusText}`}>
-                <div className={styles.skill}>{skill}</div>
-                <div>Q23079</div>
+            <div className={styles.statusBar}>
+                <img src={statusBarImg} className={styles.statusBar} alt="status-bar" draggable={false} />
+                <div className={`${styles.grid} ${styles.statusText}`}>
+                    <div className={styles.skill}>{skill}</div>
+                    <div>Q23079</div>
+                </div>
             </div>
         </>
     )
