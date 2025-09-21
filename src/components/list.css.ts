@@ -4,7 +4,7 @@ import { style } from "@vanilla-extract/css";
 const listBackStyle = style({
     position: "absolute",
     width: "90vw",
-    height: "72vh",
+    height: "62vh",
     top: "15vh",
     left: "5vw",
     backgroundColor: "#002060d5",
@@ -22,17 +22,24 @@ const listGridStyle = style({
 });
 
 const listItemStyle = style({
-    backgroundColor: "#6e78deff",
+    backgroundColor: "#ffffffff",
 });
 
+// タイトル
 const title = style({
     fontSize: "2.5vw",
+});
+
+// 日付
+const date = style({
+    fontSize: "1.5vw",
+    color: "#666666",
 });
 
 // ２分割グリッド
 const twoColumnGridStyle = style({
     display: "grid",
-    gridTemplateRows: "2fr 0.5fr",
+    gridTemplateRows: "2fr 0.5fr 0.5fr",
     height: "100%",
     alignItems: "center",
     justifyItems: "center",
@@ -46,6 +53,6 @@ const img = style({
     borderRadius: "10px",
 });
 
-const styles = { listBackStyle, listGridStyle, listItemStyle, twoColumnGridStyle, img, title };
+const styles = { listBackStyle, listGridStyle, listItemStyle, twoColumnGridStyle, img, title, date };
 
 export default styles;

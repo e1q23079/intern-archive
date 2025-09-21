@@ -11,6 +11,8 @@ import FadeOutRedirect from "../animation/FadeOutRedirect";
 import { useState } from "react";
 import FadeInSc from "../animation/FadeInSc";
 
+import List from "../components/list";
+
 const HomePage = () => {
 
     const [status, setStatus] = useState(false);
@@ -31,6 +33,7 @@ const HomePage = () => {
                     <div className={statusBarStyle}>
                         <StatusBar></StatusBar>
                     </div>
+                    <List></List>
                     <div className={preBtnStyle}>
                         <PreBtn></PreBtn>
                     </div>
