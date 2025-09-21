@@ -17,9 +17,22 @@ const HomePage = () => {
 
     const [status, setStatus] = useState(false);
 
+    const [nowPage, setNowPage] = useState(0);
+
     const backBtn = () => {
         setStatus(true);
     }
+
+
+    const next = () => {
+        setNowPage((prevPage) => (prevPage < 1 ? prevPage + 1 : prevPage));
+    };
+
+    const pre = () => {
+        setNowPage((prevPage) => (prevPage > 0 ? prevPage - 1 : prevPage));
+
+    };
+
 
     return (
 
@@ -33,15 +46,15 @@ const HomePage = () => {
                     <div className={statusBarStyle}>
                         <StatusBar></StatusBar>
                     </div>
-                    <List></List>
-                    <div className={preBtnStyle}>
+                    <List num={nowPage}></List>
+                    <div className={preBtnStyle} onClick={pre}>
                         <PreBtn></PreBtn>
                     </div>
-                    <div className={nextBtnStyle}>
+                    <div className={nextBtnStyle} onClick={next}>
                         <NextBtn></NextBtn>
                     </div >
                 </FadeOutRedirect>
-            </FadeInSc>
+            </FadeInSc >
         </>
     );
 }
