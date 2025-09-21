@@ -17,6 +17,6 @@ export default meta;
 
 export const TypingStory = {
     args: {
-        text: "Storybookへ，ようこそ！"
+        text: "日々挑戦し続ける，情報系学生の記録"
     }
 };
