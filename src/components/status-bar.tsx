@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import statusBarImg from "../assets/status-bar-in-skill.png";
+import statusBarImg from "../assets/status-bar-on-skill.png";
 import styles from "./status-bar.css";
 
 const StatusBar = () => {
