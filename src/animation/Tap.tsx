@@ -11,7 +11,7 @@ const Tap = ({ children }: TapProps) => {
         <motion.div
             whileTap={{ scale: 0.9 }}
             style={{
-                display: "inline-block",
+                // display: "inline-block",
                 transformOrigin: "center",
             }}
         >

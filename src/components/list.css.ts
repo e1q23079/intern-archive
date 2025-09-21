@@ -23,6 +23,7 @@ const listGridStyle = style({
 
 const listItemStyle = style({
     backgroundColor: "#ffffffff",
+    height: "100%",
 });
 
 // タイトル
