@@ -1,19 +1,28 @@
+import { useEffect, useState } from "react";
 import statusBarImg from "../assets/status-bar-in-skill.png";
 import styles from "./status-bar.css";
 
 const StatusBar = () => {
 
-    // 日付を取得
-    const date = new Date();
-    const year = date.getFullYear();
-    const month = date.getMonth() + 1;
-    const day = date.getDate();
-    const hours = date.getHours();
-    const minutes = date.getMinutes();
-    const seconds = date.getSeconds();
+    const [skill, setSkill] = useState("null");
 
-    // スキル値を計算
-    const skill = (year + month + day + hours + minutes + seconds);
+    useEffect(() => {
+
+        const requestOptions = {
+            method: "GET",
+            redirect: "follow" as RequestRedirect,
+        };
+
+        fetch("https://api.github.com/users/e1q23079", requestOptions)
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then((result) => setSkill(result.public_repos))
+            .catch((error) => console.error(error));
+    }, []);
 
     return (
         <>
