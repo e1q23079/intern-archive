@@ -1,6 +1,7 @@
 import { Routes, Route, HashRouter } from "react-router-dom"
 import StartPage from "./page/start"
 import HomePage from "./page/home"
+import Introduction from "./page/introduction";
 
 // import { useEffect, useState } from "react"
 
@@ -30,6 +31,7 @@ const App = () => {
         <Routes>
           <Route path="" element={<StartPage />} />
           <Route path="home" element={<HomePage />} />
+          <Route path="introduction" element={<Introduction />} />
         </Routes>
       </HashRouter>
       {/* </div > */}

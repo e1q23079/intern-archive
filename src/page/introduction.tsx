@@ -1,8 +1,8 @@
+import Typing from "../animation/Typing";
+
 const Introduction = () => {
     return (
-        <div>
-            Introduction Page
-        </div>
+        <Typing text="日々挑戦し続ける，情報系学生の記録" />
     );
 }
 
