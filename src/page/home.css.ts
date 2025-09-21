@@ -7,6 +7,13 @@ export const backBtnStyle = style({
     left: "1.3vw",
 });
 
+// ステータスバー
+export const statusBarStyle = style({
+    position: "absolute",
+    top: "2.5vh",
+    right: "1.3vw",
+});
+
 // 進ボタン
 export const nextBtnStyle = style({
     position: "absolute",
