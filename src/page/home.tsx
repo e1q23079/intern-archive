@@ -11,7 +11,7 @@ import listBackImg from "../assets/list-back.png";
 
 const HomePage = () => {
 
-    const start = () => {
+    const backBtn = () => {
         setTimeout(() => {
             window.location.href = "#"
         }, 1000);
@@ -20,7 +20,7 @@ const HomePage = () => {
     return (
         <>
             <img src={back} alt="start screen back 02" className={backScreen} draggable={false} />
-            <div className={backBtnStyle} onClick={start}>
+            <div className={backBtnStyle} onClick={backBtn}>
                 <BackBtn></BackBtn>
             </div>
             <div className={statusBarStyle}>
