@@ -1,4 +1,4 @@
-import FadeInOut from "../animation/back_screen/FadeInOut";
+import FadeInOut from "../animation/FadeInOut";
 import startBtnImg from "../assets/start_btn.png";
 import styles from "./start-btn.css";
 

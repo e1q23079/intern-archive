@@ -1,5 +1,5 @@
 import preBtnImg from "../assets/pre-btn.png";
-import Tap from "../animation/back_screen/Tap";
+import Tap from "../animation/Tap";
 import { btnSize } from "./btn-size.css";
 
 const PreBtn = () => {

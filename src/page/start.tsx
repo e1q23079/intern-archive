@@ -1,4 +1,4 @@
-import FadeIn from '../animation/back_screen/FadeIn.tsx'
+import FadeIn from '../animation/FadeIn.tsx'
 
 import StartBtn from '../components/start-btn.tsx'
 

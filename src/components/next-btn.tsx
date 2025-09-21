@@ -1,6 +1,6 @@
 import nextBtnImg from "../assets/next-btn.png";
 import { btnSize } from "./btn-size.css";
-import Tap from "../animation/back_screen/Tap";
+import Tap from "../animation/Tap";
 
 const NextBtn = () => {
     return (

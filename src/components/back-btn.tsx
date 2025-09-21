@@ -1,6 +1,6 @@
 import backBtnImg from "../assets/back-btn.png";
 import styles from "./back-btn.css";
-import Tap from "../animation/back_screen/Tap";
+import Tap from "../animation/Tap";
 
 const BackBtn = () => {
     return (

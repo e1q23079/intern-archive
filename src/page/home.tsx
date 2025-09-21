@@ -5,8 +5,8 @@ import back from "../assets/back.png";
 import { backScreen } from "./start.css";
 import PreBtn from "../components/pre-btn";
 import NextBtn from "../components/next-btn";
-import { s } from "framer-motion/client";
 import StatusBar from "../components/status-bar";
+import FadeIn from "../animation/FadeIn";
 
 const HomePage = () => {
 
