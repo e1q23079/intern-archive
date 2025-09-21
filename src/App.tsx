@@ -10,11 +10,12 @@ const App = () => {
   return (
     <>
       {/* 昼 */}
-      <img src={back_screen01} alt="start screen back 01" className={backScreen} />
+      <img src={back_screen01} alt="start screen back 01" className={backScreen} draggable={false} />
       {/* 夜 */}
       <FadeIn>
-        <img src={back_screen02} alt="start screen back 02" className={backScreen} />
+        <img src={back_screen02} alt="start screen back 02" className={backScreen} draggable={false} />
       </FadeIn >
+      <StartBtn></StartBtn>
     </>
   )
 }

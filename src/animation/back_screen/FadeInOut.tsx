@@ -9,9 +9,9 @@ type FadeInOutProps = {
 const FadeInOut = ({ children }: FadeInOutProps) => {
     return (
         <motion.div
-            initial={{ opacity: 1 }}
-            animate={{ opacity: [0, 1, 0] }}
-            transition={{ duration: 3, delay: 1, ease: "easeOut", repeat: Infinity }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: [0, 1, 1, 0] }}
+            transition={{ duration: 1.5, delay: 4, ease: "easeOut", repeat: Infinity }}
         >
             {children}
         </motion.div>

@@ -1,10 +1,11 @@
 import FadeInOut from "../animation/back_screen/FadeInOut";
-import styles from "./start-btn.css"
+import startBtnImg from "../assets/start_btn.png";
+import styles from "./start-btn.css";
 
 const StartBtn = () => {
     return (
         <FadeInOut>
-            <div className={styles.startBtn}>Touch The Screen</div>
+            <img src={startBtnImg} className={styles.startBtn} alt="start-btn" draggable={false} />
         </FadeInOut>
     )
 };
