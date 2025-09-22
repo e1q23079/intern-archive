@@ -16,9 +16,7 @@ const preBtn = ({ show }: preBtnProps) => {
         )
     } else {
         return (
-            <Tap>
-                <img src={preBtnImgDisabled} className={btnSize} alt="back-btn" draggable={false} />
-            </Tap>
+            <img src={preBtnImgDisabled} className={btnSize} alt="back-btn" draggable={false} />
         )
     }
 };

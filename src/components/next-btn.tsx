@@ -16,9 +16,7 @@ const NextBtn = ({ show }: NextBtnProps) => {
         )
     } else {
         return (
-            <Tap>
-                <img src={nextBtnImgDisabled} className={btnSize} alt="back-btn" draggable={false} />
-            </Tap>
+            <img src={nextBtnImgDisabled} className={btnSize} alt="back-btn" draggable={false} />
         )
     }
 };
