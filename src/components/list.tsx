@@ -34,7 +34,7 @@ const List = ({ num }: ListProps) => {
 
     return (
         <><div className={styles.listBackStyle}>
-            <Swiper spaceBetween={10} slidesPerView={1} className={styles.sliderStyle} onSwiper={setSwiper}>
+            <Swiper spaceBetween={10} slidesPerView={1} className={styles.sliderStyle} onSwiper={setSwiper} allowTouchMove={false}>
                 <SwiperSlide>
                     {/* <img src={listBackImg} alt="list back" draggable={false} /> */}
                     <div className={styles.listGridStyle}>
