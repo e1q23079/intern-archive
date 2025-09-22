@@ -5,11 +5,13 @@ const listBackStyle = style({
     position: "absolute",
     width: "90vw",
     height: "62vh",
-    top: "15vh",
-    left: "5vw",
-    backgroundColor: "#002060d5",
+    top: "50.5%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    backgroundColor: "#00206098",
     padding: "2vw",
     borderRadius: "10px",
+    border: "1px solid #ffffffff",
 });
 
 // グリッド
