@@ -4,6 +4,10 @@ const nextBtn = style({
     width: "5.3vw",
 });
 
-const styles = { nextBtn };
+const cursorPointer = style({
+    cursor: "pointer",
+});
+
+const styles = { nextBtn, cursorPointer };
 
 export default styles;

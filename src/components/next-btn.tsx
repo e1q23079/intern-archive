@@ -2,6 +2,7 @@ import nextBtnImg from "../assets/next-btn.png";
 import nextBtnImgDisabled from "../assets/next-btn-disable.png";
 import { btnSize } from "./btn-size.css";
 import Tap from "../animation/Tap";
+import styles from "./next-btn.css";
 
 type NextBtnProps = {
     show: boolean;
@@ -11,7 +12,7 @@ const NextBtn = ({ show }: NextBtnProps) => {
     if (show === true) {
         return (
             <Tap>
-                <img src={nextBtnImg} className={btnSize} alt="back-btn" draggable={false} />
+                <img src={nextBtnImg} className={`${btnSize} ${styles.cursorPointer}`} alt="back-btn" draggable={false} />
             </Tap>
         )
     } else {

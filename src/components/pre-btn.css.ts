@@ -4,6 +4,10 @@ const preBtn = style({
     width: "5.3vw",
 });
 
-const styles = { preBtn };
+const cursorPointer = style({
+    cursor: "pointer",
+});
+
+const styles = { preBtn, cursorPointer };
 
 export default styles;
