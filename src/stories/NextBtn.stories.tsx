@@ -7,8 +7,15 @@ import NextBtn from '../components/next-btn';
 const meta: Meta<typeof NextBtn> = {
     title: 'NextBtn',
     component: NextBtn,
+    argTypes: {
+        show: { type: 'boolean' },
+    },
 };
 
 export default meta;
 
-export const NextBtnStory = {};
+export const NextBtnStory = {
+    args: {
+        show: true
+    }
+};

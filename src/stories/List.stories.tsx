@@ -16,6 +16,6 @@ export default meta;
 
 export const ListStory = {
     args: {
-        num: 2
+        num: 0
     }
 };

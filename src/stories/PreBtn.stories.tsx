@@ -7,8 +7,15 @@ import PreBtn from '../components/pre-btn';
 const meta: Meta<typeof PreBtn> = {
     title: 'PreBtn',
     component: PreBtn,
+    argTypes: {
+        show: { type: 'boolean' },
+    },
 };
 
 export default meta;
 
-export const PreBtnStory = {};
+export const PreBtnStory = {
+    args: {
+        show: true
+    }
+};
