@@ -48,10 +48,10 @@ const HomePage = () => {
                     </div>
                     <List num={nowPage}></List>
                     <div className={preBtnStyle} onClick={pre}>
-                        <PreBtn></PreBtn>
+                        <PreBtn show={nowPage > 0}></PreBtn>
                     </div>
                     <div className={nextBtnStyle} onClick={next}>
-                        <NextBtn></NextBtn>
+                        <NextBtn show={nowPage < 2}></NextBtn>
                     </div >
                 </FadeOutRedirect>
             </FadeInSc >
