@@ -13,6 +13,8 @@ import FadeInSc from "../animation/FadeInSc";
 
 import List from "../components/list";
 
+import data from "../data/data.json";
+
 const HomePage = () => {
 
     const [status, setStatus] = useState(false);
@@ -25,7 +27,7 @@ const HomePage = () => {
 
 
     const next = () => {
-        setNowPage((prevPage) => (prevPage < 2 ? prevPage + 1 : prevPage));
+        setNowPage((prevPage) => (prevPage < data.length - 1 ? prevPage + 1 : prevPage));
     };
 
     const pre = () => {
