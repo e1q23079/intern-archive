@@ -54,6 +54,12 @@ const img = style({
     borderRadius: "10px",
 });
 
-const styles = { listBackStyle, listGridStyle, listItemStyle, twoColumnGridStyle, img, title, date };
+// スライダー
+const sliderStyle = style({
+    width: "100%",
+    height: "100%",
+});
+
+const styles = { listBackStyle, listGridStyle, listItemStyle, twoColumnGridStyle, img, title, date, sliderStyle };
 
 export default styles;
