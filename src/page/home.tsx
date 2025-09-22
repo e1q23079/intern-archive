@@ -53,7 +53,7 @@ const HomePage = () => {
                         <PreBtn show={nowPage > 0}></PreBtn>
                     </div>
                     <div className={nextBtnStyle} onClick={next}>
-                        <NextBtn show={nowPage < 2}></NextBtn>
+                        <NextBtn show={nowPage < data.length - 1}></NextBtn>
                     </div >
                 </FadeOutRedirect>
             </FadeInSc >
