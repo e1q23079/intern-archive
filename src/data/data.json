@@ -4,13 +4,13 @@
         "cards": [
             {
                 "id": 1,
-                "company": "株式会社A",
+                "company": "株式会社大阪",
                 "date": "2024/0x/xx~2024/xx/xx",
                 "img": "files/sampleImage.jpg"
             },
             {
                 "id": 2,
-                "company": "株式会社B",
+                "company": "株式会社東京",
                 "date": "2024/0x/xx~2024/xx/xx",
                 "img": "files/sampleImage.jpg"
             },

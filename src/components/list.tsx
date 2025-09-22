@@ -40,7 +40,6 @@ const List = ({ num }: ListProps) => {
                     <SwiperSlide key={index}>
                         <div className={styles.listGridStyle}>
                             {item.cards.map((card) => (
-
                                 <Card title={card.company} date={card.date} img={card.img} />
                             ))}
                         </div>
