@@ -1,3 +1,46 @@
 {
-    "text": "株式会社G"
+    "company": "株式会社サンプル",
+    "title": "サンプルサマーインターンシップ2024",
+    "description": "サンプル株式会社のサマーインターンシップに参加しました。実際の業務に近い体験ができ、エンジニアとしてのスキルを磨くことができました。",
+    "url": "https://www.example.com/internship",
+    "date": "2024/0x/xx~2024/xx/xx",
+    "location": "オンライン",
+    "explanation": "今回のインターンシップでは、フロントエンド、バックエンド、インフラの各分野で実際のプロジェクトを作成しました。",
+    "image": [
+        "/files/portfolio.png",
+        "/files/blog.png",
+        "/files/portfolio.png"
+    ],
+    "list": [
+        "フロントエンド",
+        "バックエンド",
+        "インフラ"
+    ],
+    "ingenuity": [
+        "チームでの協力",
+        "問題解決能力",
+        "コミュニケーションスキル"
+    ],
+    "hard": [
+        "時間内にタスクを完了する能力",
+        "新しい技術の習得",
+        "コードの品質向上"
+    ],
+    "learned": [
+        "実際のプロジェクトでの開発経験",
+        "最新の技術スタックの理解",
+        "チームでの効果的なコミュニケーション"
+    ],
+    "github": "https://www.example.com/github/sample-internship",
+    "links": [
+        {
+            "name": "インターンシップ詳細ページ",
+            "url": "https://www.example.com/internship-details"
+        },
+        {
+            "name": "参加レポートブログ",
+            "url": "https://www.example.com/internship-blog"
+        }
+    ],
+    "other": "※このページはサンプルページです。"
 }
