@@ -5,6 +5,7 @@ type Links = {
 }
 
 type DetailData = {
+    id: number;
     company: string;
     title: string;
     description: string;

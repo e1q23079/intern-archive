@@ -84,16 +84,19 @@ const DetailComponent = ({ detailData }: DetailComponentProps) => {
                         <p><a href={detailData.github} target="_blank">{detailData.github}</a></p>
                     </>
                 )}
-                {detailData.links && (
-                    <>
-                        <h4>リンク</h4>
-                        <ul>
+                <h4>リンク</h4>
+                <ul>
+                    {detailData.links && (
+                        <>
+
                             {detailData.links.map((link) => (
                                 <li key={link.url}><a href={link.url} target="_blank">{link.name}</a></li>
                             ))}
-                        </ul>
-                    </>
-                )}
+
+                        </>
+                    )}
+                    <li><a href={`/intern-archive/#preview/${detailData.id}`} target="_blank">インターンシップ参加ログ</a></li>
+                </ul>
                 {detailData.other && (
                     <>
                         <h4>その他</h4>
