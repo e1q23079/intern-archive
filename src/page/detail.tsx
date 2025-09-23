@@ -8,6 +8,7 @@ import StatusBar from "../components/status-bar";
 import FadeOutRedirect from "../animation/FadeOutRedirect";
 import { useState } from "react";
 import FadeInSc from "../animation/FadeInSc";
+import DetailBox from "../components/detail-box";
 
 const DetailPage = () => {
 
@@ -27,6 +28,7 @@ const DetailPage = () => {
                 <div className={statusBarStyle}>
                     <StatusBar></StatusBar>
                 </div>
+                <DetailBox></DetailBox>
             </FadeOutRedirect>
         </FadeInSc >
     )

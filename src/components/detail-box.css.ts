@@ -4,8 +4,8 @@ import { style } from "@vanilla-extract/css";
 const listBackStyle = style({
     position: "absolute",
     width: "90vw",
-    height: "62vh",
-    top: "50.5%",
+    height: "72vh",
+    top: "56%",
     left: "50%",
     transform: "translate(-50%, -50%)",
     backgroundColor: "#00206098",

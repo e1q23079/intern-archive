@@ -20,6 +20,16 @@ const DetailBox = () => {
                 詳細BOX<br></br>
                 詳細BOX<br></br>
                 詳細BOX<br></br>
+                詳細BOX<br></br>
+                詳細BOX<br></br>
+                詳細BOX<br></br>
+                詳細BOX<br></br>
+                詳細BOX<br></br>
+                詳細BOX<br></br>
+                詳細BOX<br></br>
+                詳細BOX<br></br>
+                詳細BOX<br></br>
+                詳細BOX<br></br>
             </div>
         </div>
     )
