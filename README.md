@@ -1,3 +1,35 @@
+# Intern-Archive
+
+## インターンデータ
+
+`/public/data`
+
+## 開発サーバー起動
+
+### 開発
+
+```bash
+npm run dev
+```
+
+### 外部アクセス
+
+```bash
+npm run start
+```
+
+#### Storybook
+
+```bash
+npm run storybook
+```
+
+### GitHub Pages設定
+
+- Build and deployment
+  - Source
+    - GitHub Actions
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -48,29 +80,3 @@ export default tseslint.config({
   },
 })
 ```
-
-## 開発サーバー起動
-
-### 開発
-
-```bash
-npm run dev
-```
-
-### 外部アクセス
-
-```bash
-npm run start
-```
-
-#### Storybook
-
-```bash
-npm run storybook
-```
-
-### GitHub Pages設定
-
-- Build and deployment
-  - Source
-    - GitHub Actions
