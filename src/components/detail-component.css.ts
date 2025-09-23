@@ -22,8 +22,18 @@ globalStyle("h2", {
     color: "#002060",
 });
 
-globalStyle("h3,h4,h5,p", {
+globalStyle("h3,h4,h5", {
     color: "#002060",
+    backgroundColor: "#00206020",
+    padding: "0.1em 0.3em",
+});
+
+globalStyle("p", {
+    color: "#002060",
+})
+
+globalStyle("hr", {
+    backgroundColor: "#00206098",
 });
 
 
