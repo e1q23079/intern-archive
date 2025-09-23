@@ -11,6 +11,7 @@ type DetailData = {
     url: string;
     date: string;
     location: string;
+    explanation: string;
     image: [string];
     list: [string];
     ingenuity: [string];

@@ -5,6 +5,7 @@
     "url": "https://www.example.com/internship",
     "date": "2024/0x/xx~2024/xx/xx",
     "location": "オンライン",
+    "explanation": "今回のインターンシップでは、フロントエンド、バックエンド、インフラの各分野で実際のプロジェクトを作成しました。",
     "image": [
         "/files/portfolio.png",
         "/files/blog.png",
