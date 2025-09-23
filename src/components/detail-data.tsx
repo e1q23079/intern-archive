@@ -1,4 +1,9 @@
 
+type Links = {
+    name: string;
+    url: string;
+}
+
 type DetailData = {
     company: string;
     title: string;
@@ -7,7 +12,12 @@ type DetailData = {
     date: string;
     location: string;
     image: [string];
+    list: [string];
+    ingenuity: [string];
+    hard: [string];
+    learned: [string];
     github: string;
+    links: Links[];
     other: string;
 };
 

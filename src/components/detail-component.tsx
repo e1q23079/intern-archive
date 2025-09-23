@@ -37,15 +37,37 @@ const DetailComponent = ({ detailData }: DetailComponentProps) => {
                 )}
                 <h4>担当箇所・役割</h4>
                 <ul>
-                    <li>フロントエンド開発</li>
-                    <li>バックエンド開発</li>
-                    <li>デザイン</li>
+                    {detailData.list.map((item) => (
+                        <li key={item}>{item}</li>
+                    ))}
                 </ul>
                 <h4>工夫したところ</h4>
+                <ul>
+                    {detailData.ingenuity.map((item) => (
+                        <li key={item}>{item}</li>
+                    ))}
+                </ul>
                 <h4>苦労したこと</h4>
+                <ul>
+                    {detailData.hard.map((item) => (
+                        <li key={item}>{item}</li>
+                    ))}
+                </ul>
                 <h4>学んだこと</h4>
+                <ul>
+                    {detailData.learned.map((item) => (
+                        <li key={item}>{item}</li>
+                    ))}
+                </ul>
                 <h4>GitHubリポジトリ</h4>
                 <p><a href={detailData.github} target="_blank">{detailData.github}</a></p>
+                <h4>リンク</h4>
+                <ul>
+                    {detailData.links.map((link) => (
+                        <li key={link.url}><a href={link.url} target="_blank">{link.name}</a></li>
+                    ))}
+                </ul>
+                <h4>その他</h4>
                 <p>{detailData.other}</p>
             </>
         )
