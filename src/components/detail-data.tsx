@@ -6,7 +6,7 @@ type DetailData = {
     url: string;
     date: string;
     location: string;
-    image: string;
+    image: [string];
     github: string;
     other: string;
 };

@@ -5,7 +5,11 @@
     "url": "https://www.example.com/internship",
     "date": "2024/0x/xx~2024/xx/xx",
     "location": "オンライン",
-    "image": "/files/portfolio.png",
+    "image": [
+        "/files/portfolio.png",
+        "/files/blog.png",
+        "/files/portfolio.png"
+    ],
     "github": "https://www.example.com/github/sample-internship",
     "other": "※このページはサンプルページです。"
 }
