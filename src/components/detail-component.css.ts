@@ -30,6 +30,11 @@ globalStyle("h3,h4,h5", {
 
 globalStyle("p", {
     color: "#002060",
+    padding: "0.1em 0.3em",
+})
+
+globalStyle("a", {
+    padding: "0.1em 0.3em",
 })
 
 globalStyle("hr", {
