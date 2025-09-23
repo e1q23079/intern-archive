@@ -21,7 +21,7 @@ const StartPage = () => {
 
     return (
         <FadeInSc>
-            <FadeOutRedirect redirectUrl="#/home" trigger={status}>
+            <FadeOutRedirect redirectUrl="#home" trigger={status}>
                 <>
                     <div onClick={start}>
                         {/* 昼 */}
