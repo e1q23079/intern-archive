@@ -21,13 +21,16 @@ const HomePage = () => {
 
     const [detail, setDetail] = useState(false);
 
+    const [detailId, setDetailId] = useState(0);
+
     const [nowPage, setNowPage] = useState(0);
 
     const backBtn = () => {
         setStatus(true);
     };
 
-    const changePage = () => {
+    const changePage = (id: number) => {
+        setDetailId(id);
         setDetail(true);
     };
 
@@ -45,7 +48,7 @@ const HomePage = () => {
     return (
         <>
             <FadeInSc>
-                <FadeOutRedirect redirectUrl="#detail" trigger={detail}>
+                <FadeOutRedirect redirectUrl={`#detail/${detailId}`} trigger={detail}>
                     <FadeOutRedirect redirectUrl="#" trigger={status}>
                         <img src={back} alt="start screen back 02" className={backScreen} draggable={false} />
                         <div className={backBtnStyle} onClick={backBtn}>
