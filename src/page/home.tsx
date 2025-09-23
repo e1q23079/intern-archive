@@ -37,7 +37,6 @@ const HomePage = () => {
 
 
     return (
-
         <>
             <FadeInSc>
                 <FadeOutRedirect redirectUrl="#" trigger={status}>
