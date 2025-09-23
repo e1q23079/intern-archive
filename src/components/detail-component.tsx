@@ -6,7 +6,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Pagination, Navigation } from "swiper/modules";
-import { datalist } from "framer-motion/client";
 
 type DetailComponentProps = {
     detailData?: DetailData;
