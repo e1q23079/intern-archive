@@ -26,14 +26,15 @@ const DetailComponent = ({ detailData }: DetailComponentProps) => {
                 <p>{detailData.location}</p>
                 <h3>制作物</h3>
                 <p>制作物についての説明</p>
-                <Swiper pagination={{ type: 'fraction' }} navigation={true} modules={[Pagination, Navigation]} spaceBetween={50} slidesPerView={1} className={styles.detailSwipStyle}>
-                    {detailData.image.map((imgSrc) => (
-                        <SwiperSlide>
-                            <img src={`/intern-archive/${imgSrc}`} alt="Detail Image" className={styles.detailImageStyle} />
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
-
+                {detailData.image && (
+                    <Swiper pagination={{ type: 'fraction' }} navigation={true} modules={[Pagination, Navigation]} spaceBetween={50} slidesPerView={1} className={styles.detailSwipStyle}>
+                        {detailData.image.map((imgSrc) => (
+                            <SwiperSlide>
+                                <img src={`/intern-archive/${imgSrc}`} alt="Detail Image" className={styles.detailImageStyle} />
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                )}
                 <h4>担当箇所・役割</h4>
                 <ul>
                     <li>フロントエンド開発</li>
