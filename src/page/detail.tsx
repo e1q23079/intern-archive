@@ -9,16 +9,15 @@ import FadeOutRedirect from "../animation/FadeOutRedirect";
 import { useEffect, useState } from "react";
 import FadeInSc from "../animation/FadeInSc";
 import DetailBox from "../components/detail-box";
-
-type DetailBoxProps = {
-    id: number;
-};
+import { useParams } from "react-router-dom";
 
 type DetailData = {
     text: string;
 };
 
-const DetailPage = ({ id }: DetailBoxProps) => {
+const DetailPage = () => {
+
+    const { id } = useParams<{ id: string }>();
 
     const [status, setStatus] = useState(false);
 
