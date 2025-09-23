@@ -13,6 +13,10 @@ const skill = style({
     color: "white",
 });
 
+const name = style({
+    color: "#002060"
+});
+
 const grid = style({
     position: "absolute",
     fontSize: "2.5vw",
@@ -26,6 +30,6 @@ const grid = style({
     height: "100%",
 });
 
-const styles = { statusBar, grid, skill, statusText };
+const styles = { statusBar, grid, skill, statusText, name };
 
 export default styles;

@@ -15,7 +15,7 @@ const DetailComponent = ({ detailData }: DetailComponentProps) => {
     if (detailData) {
         return (
             <>
-                <h1>{detailData.company}</h1>
+                <h1>◆ {detailData.company}</h1>
                 <h2>{detailData.title}</h2>
                 <h3>概要</h3>
                 <p>{detailData.description}</p>

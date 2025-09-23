@@ -32,6 +32,7 @@ const listItemStyle = style({
 // タイトル
 const title = style({
     fontSize: "2.5vw",
+    color: "#002060",
 });
 
 // 日付

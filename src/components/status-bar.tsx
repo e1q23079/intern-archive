@@ -35,7 +35,7 @@ const StatusBar = () => {
                 <img src={statusBarImg} className={styles.statusBar} alt="status-bar" draggable={false} />
                 <div className={`${styles.grid} ${styles.statusText}`}>
                     <div className={styles.skill}>{skill}</div>
-                    <div>{name}</div>
+                    <div className={styles.name}>{name}</div>
                 </div>
             </div>
         </>
