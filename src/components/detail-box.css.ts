@@ -14,8 +14,19 @@ const listBackStyle = style({
     border: "1px solid #ffffffff",
 });
 
+// 文章エリア
+const textAreaStyle = style({
+    height: "100%",
+    backgroundColor: "#ffffffff",
+    overflowY: "scroll",
+    overflowX: "hidden",
+    padding: "1vw",
+    boxSizing: "border-box",
+});
+
 const styles = {
     listBackStyle,
+    textAreaStyle,
 };
 
 export default styles;
