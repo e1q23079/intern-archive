@@ -14,10 +14,11 @@ import { Swiper as SwiperType } from "swiper/types";
 
 type ListProps = {
     num: number;
+    chengeHandler?: () => void;
 };
 
 
-const List = ({ num }: ListProps) => {
+const List = ({ num, chengeHandler }: ListProps) => {
 
     const [isNum, setIsNum] = useState(0);
 
@@ -40,7 +41,7 @@ const List = ({ num }: ListProps) => {
                     <SwiperSlide key={index}>
                         <div className={styles.listGridStyle}>
                             {item.cards.map((card) => (
-                                <Card title={card.company} date={card.date} img={card.img} />
+                                <Card title={card.company} date={card.date} img={card.img} onClickC={chengeHandler} />
                             ))}
                         </div>
                     </SwiperSlide>

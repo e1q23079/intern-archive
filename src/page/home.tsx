@@ -19,11 +19,17 @@ const HomePage = () => {
 
     const [status, setStatus] = useState(false);
 
+    const [detail, setDetail] = useState(false);
+
     const [nowPage, setNowPage] = useState(0);
 
     const backBtn = () => {
         setStatus(true);
-    }
+    };
+
+    const changePage = () => {
+        setDetail(true);
+    };
 
 
     const next = () => {
@@ -39,21 +45,23 @@ const HomePage = () => {
     return (
         <>
             <FadeInSc>
-                <FadeOutRedirect redirectUrl="#" trigger={status}>
-                    <img src={back} alt="start screen back 02" className={backScreen} draggable={false} />
-                    <div className={backBtnStyle} onClick={backBtn}>
-                        <BackBtn></BackBtn>
-                    </div>
-                    <div className={statusBarStyle}>
-                        <StatusBar></StatusBar>
-                    </div>
-                    <List num={nowPage}></List>
-                    <div className={preBtnStyle} onClick={pre}>
-                        <PreBtn show={nowPage > 0}></PreBtn>
-                    </div>
-                    <div className={nextBtnStyle} onClick={next}>
-                        <NextBtn show={nowPage < data.length - 1}></NextBtn>
-                    </div >
+                <FadeOutRedirect redirectUrl="#detail" trigger={detail}>
+                    <FadeOutRedirect redirectUrl="#" trigger={status}>
+                        <img src={back} alt="start screen back 02" className={backScreen} draggable={false} />
+                        <div className={backBtnStyle} onClick={backBtn}>
+                            <BackBtn></BackBtn>
+                        </div>
+                        <div className={statusBarStyle}>
+                            <StatusBar></StatusBar>
+                        </div>
+                        <List num={nowPage} chengeHandler={changePage}></List>
+                        <div className={preBtnStyle} onClick={pre}>
+                            <PreBtn show={nowPage > 0}></PreBtn>
+                        </div>
+                        <div className={nextBtnStyle} onClick={next}>
+                            <NextBtn show={nowPage < data.length - 1}></NextBtn>
+                        </div >
+                    </FadeOutRedirect>
                 </FadeOutRedirect>
             </FadeInSc >
         </>

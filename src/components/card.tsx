@@ -5,13 +5,14 @@ import Tap from "../animation/Tap";
 type cardProps = {
     title: string;
     date: string;
-    img: string
+    img: string;
+    onClickC?: () => void;
 };
 
-const Card = ({ title, date, img }: cardProps) => {
+const Card = ({ title, date, img, onClickC }: cardProps) => {
     return (
         <Tap>
-            <div className={styles.listItemStyle}>
+            <div className={styles.listItemStyle} onClick={onClickC}>
                 <div className={styles.twoColumnGridStyle}>
                     <img src={img} alt="icon" draggable={false} className={styles.img} />
                     <div className={styles.title}>{title}</div>
