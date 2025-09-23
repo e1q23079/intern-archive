@@ -3,6 +3,8 @@ import StartPage from "./page/start"
 import HomePage from "./page/home"
 import Introduction from "./page/introduction";
 import DetailPage from "./page/detail";
+import Preview from "./components/preview";
+
 
 // import { useEffect, useState } from "react"
 
@@ -34,6 +36,7 @@ const App = () => {
           <Route path="home" element={<HomePage />} />
           <Route path="introduction" element={<Introduction />} />
           <Route path="detail/:id" element={<DetailPage />} />
+          <Route path="preview/:id" element={<Preview />} />
         </Routes>
       </HashRouter>
       {/* </div > */}
