@@ -12,6 +12,7 @@ const listBackStyle = style({
     padding: "2vw",
     borderRadius: "10px",
     border: "1px solid #ffffffff",
+    fontSize: "2vw",
 });
 
 // 文章エリア

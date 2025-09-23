@@ -4,6 +4,12 @@ const DetailBox = () => {
     return (
         <div className={styles.listBackStyle}>
             <div className={styles.textAreaStyle}>
+                <h1>aaaa</h1>
+                <h2>bbb</h2>
+                <h3>ccc</h3>
+                <h4>ddd</h4>
+                <h5>eee</h5>
+                <h6>fff</h6>
                 テキストあああああああああああああああああああああああああああああああああああああああああああああ<br></br>
                 テキストあああああああああああああああああああああああああああああああああああああああああああああ<br></br>
                 テキストあああああああああああああああああああああああああああああああああああああああああああああ<br></br>
