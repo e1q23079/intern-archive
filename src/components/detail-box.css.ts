@@ -12,7 +12,7 @@ const listBackStyle = style({
     padding: "2vw",
     borderRadius: "10px",
     border: "1px solid #ffffffff",
-    fontSize: "2vw",
+    fontSize: "1.7vw",
 });
 
 // 文章エリア
@@ -21,7 +21,8 @@ const textAreaStyle = style({
     backgroundColor: "#ffffffff",
     overflowY: "scroll",
     overflowX: "hidden",
-    padding: "1vw",
+    paddingLeft: "1vw",
+    paddingRight: "1vw",
     boxSizing: "border-box",
 });
 

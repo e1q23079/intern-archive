@@ -10,10 +10,9 @@ import { useEffect, useState } from "react";
 import FadeInSc from "../animation/FadeInSc";
 import DetailBox from "../components/detail-box";
 import { useParams } from "react-router-dom";
+import DetailComponent from "../components/detail-component";
+import DetailData from "../components/detail-data";
 
-type DetailData = {
-    text: string;
-};
 
 const DetailPage = () => {
 
@@ -21,7 +20,7 @@ const DetailPage = () => {
 
     const [status, setStatus] = useState(false);
 
-    const [data, setData] = useState<DetailData>({ text: "" });
+    const [data, setData] = useState<DetailData>();
 
     useEffect(() => {
         fetch(`/intern-archive/data/${id}.json`)
@@ -44,7 +43,7 @@ const DetailPage = () => {
                 <div className={statusBarStyle}>
                     <StatusBar></StatusBar>
                 </div>
-                <DetailBox>{data.text}</DetailBox>
+                <DetailBox><DetailComponent detailData={data}></DetailComponent></DetailBox>
             </FadeOutRedirect>
         </FadeInSc >
     )
