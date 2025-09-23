@@ -33,7 +33,7 @@ const App = () => {
           <Route path="" element={<StartPage />} />
           <Route path="home" element={<HomePage />} />
           <Route path="introduction" element={<Introduction />} />
-          <Route path="detail" element={<DetailPage />} />
+          <Route path="detail" element={<DetailPage id={0} />} />
         </Routes>
       </HashRouter>
       {/* </div > */}

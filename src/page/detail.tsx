@@ -6,13 +6,30 @@ import { backScreen } from "./start.css";
 import StatusBar from "../components/status-bar";
 
 import FadeOutRedirect from "../animation/FadeOutRedirect";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import FadeInSc from "../animation/FadeInSc";
 import DetailBox from "../components/detail-box";
 
-const DetailPage = () => {
+type DetailBoxProps = {
+    id: number;
+};
+
+type DetailData = {
+    text: string;
+};
+
+const DetailPage = ({ id }: DetailBoxProps) => {
 
     const [status, setStatus] = useState(false);
+
+    const [data, setData] = useState<DetailData>({ text: "" });
+
+    useEffect(() => {
+        fetch(`/intern-archive/data/${id}.json`)
+            .then((response) => response.json())
+            .then((jsonData) => setData(jsonData))
+            .catch((error) => console.error("Error fetching data:", error));
+    }, [id]);
 
     const backBtn = () => {
         setStatus(true);
@@ -28,7 +45,7 @@ const DetailPage = () => {
                 <div className={statusBarStyle}>
                     <StatusBar></StatusBar>
                 </div>
-                <DetailBox></DetailBox>
+                <DetailBox>{data.text}</DetailBox>
             </FadeOutRedirect>
         </FadeInSc >
     )
