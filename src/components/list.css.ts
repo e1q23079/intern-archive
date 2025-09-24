@@ -31,7 +31,7 @@ const listItemStyle = style({
 
 // タイトル
 const title = style({
-    fontSize: "2.5vw",
+    fontSize: "2vw",
     color: "#002060",
 });
 
