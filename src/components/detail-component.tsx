@@ -19,7 +19,9 @@ const DetailComponent = ({ detailData }: DetailComponentProps) => {
                 <h2>{detailData.title}</h2>
                 <h3>概要</h3>
                 <p>{detailData.description}</p>
-                <p><a href={detailData.url} target="_blank">{detailData.url}</a></p>
+                {detailData.url && (
+                    <p><a href={detailData.url} target="_blank">{detailData.url}</a></p>
+                )}
                 <h4>開催日</h4>
                 <p>{detailData.date}</p>
                 <h4>開催場所</h4>
