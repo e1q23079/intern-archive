@@ -27,7 +27,7 @@ const DetailComponent = ({ detailData }: DetailComponentProps) => {
                 <h4>開催場所</h4>
                 <p>{detailData.location}</p>
                 <hr />
-                <h3>制作物</h3>
+                <h3>成果物</h3>
                 <p>{detailData.explanation}</p>
                 {detailData.image && (
                     <>
