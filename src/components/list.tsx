@@ -41,7 +41,7 @@ const List = ({ num, chengeHandler }: ListProps) => {
                     <SwiperSlide key={index}>
                         <div className={styles.listGridStyle}>
                             {item.cards.map((card) => (
-                                <Card title={card.company} date={card.date} img={card.img} onClickC={() => chengeHandler?.(card.id)} />
+                                <Card key={card.id} title={card.company} date={card.date} img={card.img} onClickC={() => chengeHandler?.(card.id)} />
                             ))}
                         </div>
                     </SwiperSlide>
