@@ -32,8 +32,8 @@ const DetailComponent = ({ detailData }: DetailComponentProps) => {
                 {detailData.image && (
                     <>
                         <Swiper pagination={{ type: 'fraction' }} navigation={true} modules={[Pagination, Navigation]} spaceBetween={50} slidesPerView={1} className={styles.detailSwipStyle}>
-                            {detailData.image.map((imgSrc) => (
-                                <SwiperSlide>
+                            {detailData.image.map((imgSrc, index) => (
+                                <SwiperSlide key={index}>
                                     <img src={`/intern-archive/${imgSrc}`} alt="Detail Image" className={styles.detailImageStyle} />
                                 </SwiperSlide>
                             ))}
