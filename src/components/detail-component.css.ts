@@ -10,6 +10,10 @@ const detailSwipStyle = style({
     width: "75%",
 });
 
+const detailURLStyle = style({
+    wordBreak: "break-all",
+});
+
 globalStyle("h1", {
     padding: "0.125em 0.3em",
     borderBottom: "solid 5px #00206098",
@@ -42,6 +46,6 @@ globalStyle("hr", {
 });
 
 
-const styles = { detailImageStyle, detailSwipStyle };
+const styles = { detailImageStyle, detailSwipStyle, detailURLStyle };
 
 export default styles;
