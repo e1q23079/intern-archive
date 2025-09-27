@@ -2,7 +2,17 @@
 
 ## インターンデータ
 
-`/public/data`
+`/data/data.json`
+
+## インターン詳細データ
+
+`/public/data/[id].json`
+
+## 画像
+
+`/public/files/`
+
+インターンデータとして表示する画像は，16:9になるようにする．
 
 ## 開発サーバー起動
 
@@ -22,6 +32,12 @@ npm run start
 
 ```bash
 npm run storybook
+```
+
+#### テスト
+
+```bash
+npm run test
 ```
 
 ### GitHub Pages設定
