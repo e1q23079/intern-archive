@@ -37,6 +37,10 @@ globalStyle("p", {
     padding: "0.1em 0.3em",
 })
 
+globalStyle("li", {
+    color: "#002060",
+})
+
 globalStyle("a", {
     padding: "0.1em 0.3em",
 })
