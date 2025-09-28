@@ -102,7 +102,7 @@ const DetailComponent = ({ detailData }: DetailComponentProps) => {
                 {detailData.other && (
                     <>
                         <h4>その他</h4>
-                        <p>{detailData.other}</p>
+                        <p dangerouslySetInnerHTML={{ __html: detailData.other }} />
                     </>
                 )}
             </>
