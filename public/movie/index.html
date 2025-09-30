@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player</title>
+    <style>
+        body {
+            background-color: black;
+            color: aliceblue;
+        }
+
+        .movie_box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .grid_box {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto 0.1fr 1fr auto;
+            align-items: center;
+            gap: 5px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="movie_box">
+
+        <video id="player" width="75%" height="50%" oncontextmenu="return false;"></video>
+
+        <div class="grid_box">
+
+            <button id="ply" onclick="play_stop();">再生</button>
+            <button id="back" onclick="movie_modoru();">戻る</button>
+            <button id="go" onclick="movie_susumu();">進む</button>
+            <button id="v_mute_b" onclick="mute();">🔊</button>
+            <span id="timer">??:??/??:??</span>
+            音量
+            <input type="range" class="vol_c" id="vol" min="0" max="1" step="0.1" value="1" onchange="vol_henkou();"
+                aria-label="volume" />
+            <input type="range" class="met" id="meter" min="0" value="0" step="0.1" onchange="play_henkou();"
+                aria-label="slider" />
+            <button id="fullSc_b" onclick="full_screen_che();">フル</button>
+        </div>
+
+    </div>
+
+    <script>
+
+        var movieName = location.href.split("?")[1];
+        movieName = `${movieName}/movie`;
+        if (movieName) {
+            document.getElementById('player').poster = `${movieName}.jpg`;
+            document.getElementById('player').src = `${movieName}.mp4`;
+        }
+
+        var play_flag = false;
+
+        var mute_flag = false;
+
+        var full_screen_flag = false;
+
+        function now_time() {
+            let now_hun = parseInt(document.getElementById('player').currentTime / 60);
+            let now_byo = parseInt(document.getElementById('player').currentTime) % 60;
+            let move_hun = parseInt(document.getElementById('player').duration / 60);
+            let move_byo = parseInt(document.getElementById('player').duration) % 60;
+            document.getElementById('timer').innerText = now_hun + ":" + ('0' + now_byo).slice(-2) + "/" + move_hun + ":" + ('0' + move_byo).slice(-2);
+        }
+
+        setInterval(now_time, 500);
+
+        function play_stop() {
+            if (!play_flag) {
+                document.getElementById('ply').innerText = "停止";
+                movie_play();
+                play_flag = true;
+            } else if (play_flag) {
+                document.getElementById('ply').innerText = "再生";
+                movie_stop();
+                play_flag = false;
+            }
+        }
+
+        function mute() {
+            if (mute_flag) {
+                document.getElementById('v_mute_b').innerText = "🔊";
+                vol_k_mute();
+                mute_flag = false;
+            } else {
+                document.getElementById('v_mute_b').innerText = "🔇";
+                vol_mute();
+                mute_flag = true;
+            }
+        }
+
+        function full_screen_che() {
+            if (full_screen_flag) {
+                not_full_screen();
+                full_screen_flag = false;
+            } else {
+                full_screen();
+                full_screen_flag = true;
+            }
+        }
+
+        document.getElementById('player').volume = document.getElementById('vol').value;
+
+        function vol_henkou() {
+            document.getElementById('player').volume = document.getElementById('vol').value;
+            document.getElementById('v_mute_b').innerText = "🔊";
+            mute_flag = false;
+        }
+
+        function play_henkou() {
+            document.getElementById('meter').max = document.getElementById('player').duration;
+            document.getElementById('player').currentTime = document.getElementById('meter').value;
+        }
+
+        function Play_ti() {
+            document.getElementById('meter').max = document.getElementById('player').duration;
+            document.getElementById('meter').value = document.getElementById('player').currentTime;
+        }
+
+        setInterval(Play_ti, 500);
+
+        var last_Vol;
+
+        function movie_play() {
+            document.getElementById('player').play();
+        }
+        function movie_stop() {
+            document.getElementById('player').pause();
+        }
+        function movie_skip(stTime) {
+            document.getElementById('player').currentTime = stTime
+        }
+        function movie_now() {
+            console.log(document.getElementById('player').currentTime);
+        }
+        function vol_up() {
+            document.getElementById('player').volume += 0.1;
+            document.getElementById('vol').value = document.getElementById('player').volume;
+        }
+        function vol_down() {
+            document.getElementById('player').volume -= 0.1;
+            document.getElementById('vol').value = document.getElementById('player').volume;
+        }
+        function vol_mute() {
+            last_Vol = document.getElementById('player').volume;
+            document.getElementById('player').volume = 0;
+            document.getElementById('vol').value = document.getElementById('player').volume;
+        }
+        function vol_k_mute() {
+            document.getElementById('player').volume = last_Vol;
+            document.getElementById('vol').value = document.getElementById('player').volume;
+        }
+        function full_screen() {
+            document.documentElement.requestFullscreen();
+            document.getElementById('player').style.width = "95%";
+            document.getElementById('player').style.height = "100%";
+        }
+        function not_full_screen() {
+            document.exitFullscreen();
+            document.getElementById('player').style.width = "75%";
+            document.getElementById('player').style.height = "50%";
+        }
+        function not_full_screen2() {
+            document.getElementById('player').style.width = "75%";
+            document.getElementById('player').style.height = "50%";
+        }
+
+        function movie_susumu(stTime) {
+            document.getElementById('player').currentTime += 10;
+        }
+
+        function movie_modoru(stTime) {
+            document.getElementById('player').currentTime -= 10;
+        }
+
+        document.addEventListener(
+            "keydown", (e) => {
+                if (e.key == "ArrowUp") {
+                    vol_up();
+                } else if (e.key == "ArrowDown") {
+                    vol_down();
+                } else if (e.key == "ArrowRight") {
+                    movie_susumu();
+                } else if (e.key == "ArrowLeft") {
+                    movie_modoru();
+                }
+            }
+        );
+
+        addEventListener("fullscreenchange", (event) => {
+            if (document.fullscreenElement == null) {
+                if (full_screen_flag) {
+                    not_full_screen2();
+                }
+                document.getElementById('fullSc_b').innerText = "フル";
+            } else {
+                document.getElementById('fullSc_b').innerText = "解除";
+            }
+        });
+
+    </script>
+</body>
+
+</html>
