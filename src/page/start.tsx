@@ -11,7 +11,11 @@ import { backScreen } from './start.css.ts'
 import FadeOutRedirect from '../animation/FadeOutRedirect.tsx'
 import FadeInSc from '../animation/FadeInSc.tsx'
 
+import { useParams } from "react-router-dom";
+
 const StartPage = () => {
+
+    const { id } = useParams<{ id: string }>();
 
     const [status, setStatus] = useState(false);
 
@@ -21,7 +25,7 @@ const StartPage = () => {
 
     return (
         <FadeInSc>
-            <FadeOutRedirect redirectUrl="#home" trigger={status}>
+            <FadeOutRedirect redirectUrl={id === undefined ? "#home" : `#detail/${id}`} trigger={status}>
                 <>
                     <div onClick={start}>
                         {/* 昼 */}

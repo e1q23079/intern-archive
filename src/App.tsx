@@ -37,6 +37,7 @@ const App = () => {
           <Route path="introduction" element={<Introduction />} />
           <Route path="detail/:id" element={<DetailPage />} />
           <Route path="preview/:id" element={<Preview />} />
+          <Route path="redirect/:id" element={<StartPage />} />
         </Routes>
       </HashRouter>
       {/* </div > */}
