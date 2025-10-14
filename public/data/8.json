@@ -1,47 +1,53 @@
 {
     "id": 8,
-    "company": "株式会社H",
-    "title": "Hサマーインターンシップ2024",
-    "description": "H株式会社のサマーインターンシップに参加しました。実際の業務に近い体験ができ、エンジニアとしてのスキルを磨くことができました。",
-    "url": "https://www.example.com/internship",
-    "date": "2024/0x/xx~2024/xx/xx",
-    "location": "オンライン",
-    "explanation": "今回のインターンシップでは、フロントエンド、バックエンド、インフラの各分野で実際のプロジェクトを作成しました。",
+    "company": "株式会社f4samurai",
+    "title": "選抜制サマーインターンシップ",
+    "description": "株式会社f4samuraiが主催する選抜制サマーインターンシップに参加しました。決められたデザインを忠実に再現するという実務に近い体験を通して，フロントエンド開発のスキルを磨くことができました．",
+    "url": "https://note.com/f4samurai/n/n5b9113c69939",
+    "date": "2025/09/04~2025/09/05",
+    "location": "f4samuraiオフィス",
+    "explanation": "今回のインターンシップでは，限られた時間の中で「ロススト」のホーム画面（アウトゲームのUI）を2人チームで実装しました．CSSの体系的な理解や，flex-boxやgrid-layoutを用いたレイアウト調整の経験を積むことができました．",
     "image": [
-        "/files/portfolio.png",
-        "/files/blog.png",
-        "/files/portfolio.png"
+        "files/id8/image0.png",
+        "files/id8/image1.png",
+        "files/image8.jpg"
     ],
     "list": [
-        "フロントエンド",
-        "バックエンド",
-        "インフラ"
+        "ステータスバー",
+        "メニューボタン",
+        "モード選択ボタン",
+        "アニメーション（with Microsoft Copilot）"
     ],
     "ingenuity": [
-        "チームでの協力",
-        "問題解決能力",
-        "コミュニケーションスキル"
+        "Notionを活用してチームの役割分担を明確化",
+        "flex-boxとgrid-layoutを組み合わせた効率的なレイアウト設計",
+        "ノートを活用してレイアウトの試行錯誤"
     ],
     "hard": [
-        "時間内にタスクを完了する能力",
-        "新しい技術の習得",
-        "コードの品質向上"
+        "今までCSSを感覚で書いていたために、デザイン通りにレイアウトを再現することに苦戦した",
+        "時間内でデザインやアニメーションに工夫を加える余裕がなかった",
+        "Storybookを使いこなせなかった"
     ],
     "learned": [
-        "実際のプロジェクトでの開発経験",
-        "最新の技術スタックの理解",
-        "チームでの効果的なコミュニケーション"
+        "実務に近いフロントエンド開発の経験",
+        "flex-boxとgrid-layoutを用いたレイアウト調整",
+        "チームでの効果的なコミュニケーション",
+        "ゲーム業界ならではの開発手法や働き方"
     ],
-    "github": "https://www.example.com/github/sample-internship",
+    "github": "https://github.com/e1q23079/2025-summer-internship-frontend",
     "links": [
         {
-            "name": "インターンシップ詳細ページ",
-            "url": "https://www.example.com/internship-details"
+            "name": "「株式会社f4samurai」公式サイト",
+            "url": "https://www.f4samurai.jp/"
         },
         {
-            "name": "参加レポートブログ",
-            "url": "https://www.example.com/internship-blog"
+            "name": "「ロススト」公式サイト",
+            "url": "https://geass-game.com/"
+        },
+        {
+            "name": "成果物デモ動画",
+            "url": "/intern-archive/movie/index.html?geass_demo"
         }
     ],
-    "other": "※このページはHページです。"
+    "other": "©S/PLG CD©CLAMP・ST</br>©2019 EXNOA LLC・f4samurai"
 }
