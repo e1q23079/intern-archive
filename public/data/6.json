@@ -1,47 +1,45 @@
 {
     "id": 6,
-    "company": "株式会社F",
-    "title": "Fサマーインターンシップ2024",
-    "description": "F株式会社のサマーインターンシップに参加しました。実際の業務に近い体験ができ、エンジニアとしてのスキルを磨くことができました。",
-    "url": "https://www.example.com/internship",
-    "date": "2024/0x/xx~2024/xx/xx",
-    "location": "オンライン",
-    "explanation": "今回のインターンシップでは、フロントエンド、バックエンド、インフラの各分野で実際のプロジェクトを作成しました。",
+    "company": "株式会社ラクス",
+    "title": "RAKUS Tech Lab インターンシップ 東京②コース",
+    "description": "株式会社ラクスが主催するエンジニア向けのインターンシッププログラムに参加しました。",
+    "url": "https://fresh-recruit.rakus.co.jp/engineer/internship/",
+    "date": "2025/09/25~2025/09/27",
+    "location": "株式会社ラクス 東京第2オフィス",
+    "explanation": "開発者がコードエディターを開きながらチームとスムーズにやり取りできる「ポップアップ型チャットアプリ」を開発しました．既存のチャットツールの「画面を占有して開発しにくい」という課題を解決するため，作業を妨げないDockTalkを開発しました．",
     "image": [
-        "/files/portfolio.png",
-        "/files/blog.png",
-        "/files/portfolio.png"
+        "files/id6/image0.png",
+        "files/id6/image1.png",
+        "files/id6/image2.png",
+        "files/id6/image3.png",
+        "/files/image6.jpg"
     ],
     "list": [
-        "フロントエンド",
-        "バックエンド",
-        "インフラ"
+        "リーダー",
+        "チャットバックエンド",
+        "チャットメイン画面",
+        "コンフリクト解消"
     ],
     "ingenuity": [
-        "チームでの協力",
-        "問題解決能力",
-        "コミュニケーションスキル"
+        "チームで協議しながら要件定義・設計を進めたこと",
+        "ユーザーの利便性を最優先に考えたUI/UX設計",
+        "開発効率を重視した「シンプル is Best」の設計思想"
     ],
     "hard": [
-        "時間内にタスクを完了する能力",
-        "新しい技術の習得",
-        "コードの品質向上"
+        "限られた期間で必要機能を実装すること",
+        "チーム開発でのコンフリクト対応"
     ],
     "learned": [
-        "実際のプロジェクトでの開発経験",
-        "最新の技術スタックの理解",
-        "チームでの効果的なコミュニケーション"
+        "顧客志向：ユーザー視点に立った使いやすさの追求",
+        "チーム開発力：コンフリクトを対話で解決する重要性を実感",
+        "進捗協有力：Slackで作業状況を共有し，協力するスキルを取得"
     ],
-    "github": "https://www.example.com/github/sample-internship",
+    "github": "https://github.com/e1q23079/DockTalk",
     "links": [
         {
-            "name": "インターンシップ詳細ページ",
-            "url": "https://www.example.com/internship-details"
-        },
-        {
-            "name": "参加レポートブログ",
-            "url": "https://www.example.com/internship-blog"
+            "name": "「株式会社ラクス」公式サイト",
+            "url": "https://www.rakus.co.jp/"
         }
     ],
-    "other": "※このページはFページです。"
+    "other": null
 }
