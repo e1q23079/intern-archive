@@ -1,47 +1,40 @@
 {
     "id": 1,
-    "company": "株式会社大阪",
-    "title": "大阪サマーインターンシップ2024",
-    "description": "大阪株式会社のサマーインターンシップに参加しました。実際の業務に近い体験ができ、エンジニアとしてのスキルを磨くことができました。",
-    "url": "https://www.example.com/internship",
-    "date": "2024/0x/xx~2024/xx/xx",
+    "company": "株式会社テクノプロ テクノプロ・デザイン社",
+    "title": "1day仕事体験",
+    "description": "株式会社テクノプロ テクノプロ・デザイン社の1day仕事体験に参加しました．ゲーム形式のワークを通じて，現代のキャリア観や働く上で求められるスキルについて学びました．",
+    "url": null,
+    "date": "2023/09/15",
     "location": "オンライン",
-    "explanation": "今回のインターンシップでは、フロントエンド、バックエンド、インフラの各分野で実際のプロジェクトを作成しました。",
+    "explanation": "「The商社」というチームワーク型ゲームに参加し，限られた情報の中で戦略を立て，役割分担しながらチームで成果を目指しました．",
     "image": [
-        "/files/portfolio.png",
-        "/files/blog.png",
-        "/files/portfolio.png"
+        "/files/image1.jpg"
     ],
     "list": [
-        "フロントエンド",
-        "バックエンド",
-        "インフラ"
+        "プレイヤー"
     ],
     "ingenuity": [
-        "チームでの協力",
-        "問題解決能力",
-        "コミュニケーションスキル"
+        "コミュニケーションの工夫"
     ],
     "hard": [
-        "時間内にタスクを完了する能力",
-        "新しい技術の習得",
-        "コードの品質向上"
+        "短時間での戦略立案",
+        "役割分担と協力"
     ],
     "learned": [
-        "実際のプロジェクトでの開発経験",
-        "最新の技術スタックの理解",
-        "チームでの効果的なコミュニケーション"
+        "就社から就職へとキャリア観が変化していること",
+        "現代の仕事に求められる多様なスキルの重要性",
+        "リーダーシップや行動力，創造的発想の大切さ"
     ],
-    "github": "https://www.example.com/github/sample-internship",
+    "github": null,
     "links": [
         {
-            "name": "インターンシップ詳細ページ",
-            "url": "https://www.example.com/internship-details"
+            "name": "「株式会社テクノプロ テクノプロ・デザイン社」公式サイト",
+            "url": "https://www.technopro.com/design/"
         },
         {
-            "name": "参加レポートブログ",
-            "url": "https://www.example.com/internship-blog"
+            "name": "「The商社」ゲーム紹介ページ",
+            "url": "https://www.projectdesign.co.jp/service/the-shosha/"
         }
     ],
-    "other": "※このページは大阪ページです。"
+    "other": null
 }
