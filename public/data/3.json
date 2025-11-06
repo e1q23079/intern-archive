@@ -1,47 +1,37 @@
 {
     "id": 3,
-    "company": "株式会社",
-    "title": "サマーインターンシップ2024",
-    "description": "株式会社のサマーインターンシップに参加しました。実際の業務に近い体験ができ、エンジニアとしてのスキルを磨くことができました。",
-    "url": "https://www.example.com/internship",
-    "date": "2024/0x/xx~2024/xx/xx",
+    "company": "ジスクソフト株式会社",
+    "title": "ITインフラ基礎（冬季2Days）",
+    "description": "ジスクソフト株式会社の冬季2daysイベントに参加し，ITインフラの基礎を学びました．Linuxを用いたWebサーバー環境に触れ，実務に近い体験をすることができました．",
+    "url": "https://www.jisc.co.jp/recruit/internship",
+    "date": "2024/02/15~2024/02/16",
     "location": "オンライン",
-    "explanation": "今回のインターンシップでは、フロントエンド、バックエンド、インフラの各分野で実際のプロジェクトを作成しました。",
+    "explanation": "大学の授業で学んでいたLinuxの知識を活かしつつ，実際のWebサーバー環境でコマンド操作を体験しました．知っているコマンドも活用できましたが，まだ知らない知識も多く，基礎をさらに深める重要性を実感しました．また，社員の方々と作業や雑談を通じて交流し，社風や働く環境の雰囲気を感じることができました．",
     "image": [
-        "/files/portfolio.png",
-        "/files/blog.png",
-        "/files/portfolio.png"
+        "/files/image3.jpg"
     ],
     "list": [
-        "フロントエンド",
-        "バックエンド",
-        "インフラ"
+        "apacheサーバー構築"
     ],
     "ingenuity": [
-        "チームでの協力",
-        "問題解決能力",
-        "コミュニケーションスキル"
+        "大学で学んだ知識を実務に応用",
+        "社員との積極的なコミュニケーション"
     ],
     "hard": [
-        "時間内にタスクを完了する能力",
-        "新しい技術の習得",
-        "コードの品質向上"
+        "知らないコマンドの多さに対応すること",
+        "短期間での理解と習得"
     ],
     "learned": [
-        "実際のプロジェクトでの開発経験",
-        "最新の技術スタックの理解",
-        "チームでの効果的なコミュニケーション"
+        "Linuxが実際のWebサーバーでも広く使われていること",
+        "大学の学びが基礎として重要であること",
+        "社員同士の関係性や社風の職場選びで重要であること"
     ],
-    "github": "https://www.example.com/github/sample-internship",
+    "github": null,
     "links": [
         {
-            "name": "インターンシップ詳細ページ",
-            "url": "https://www.example.com/internship-details"
-        },
-        {
-            "name": "参加レポートブログ",
-            "url": "https://www.example.com/internship-blog"
+            "name": "「株式会社ジスクソフト」公式サイト",
+            "url": "https://www.jisc.co.jp/"
         }
     ],
-    "other": "※このページはページです。"
+    "other": null
 }
