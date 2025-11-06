@@ -4,21 +4,21 @@
         "cards": [
             {
                 "id": 1,
-                "company": "株式会社大阪",
-                "date": "2024/0x/xx~2024/xx/xx",
-                "img": "files/sampleImage.jpg"
+                "company": "株式会社テクノプロ",
+                "date": "2023/09/15",
+                "img": "files/image1.jpg"
             },
             {
                 "id": 2,
-                "company": "株式会社東京",
-                "date": "2024/0x/xx~2024/xx/xx",
-                "img": "files/sampleImage.jpg"
+                "company": "株式会社テクノプロ",
+                "date": "2023/10/07",
+                "img": "files/image2.jpg"
             },
             {
                 "id": 3,
-                "company": "株式会社C",
-                "date": "2024/0x/xx~2024/xx/xx",
-                "img": "files/sampleImage.jpg"
+                "company": "ジスクソフト株式会社",
+                "date": "2024/02/15~2024/02/16",
+                "img": "files/image3.jpg"
             }
         ]
     },
@@ -27,21 +27,21 @@
         "cards": [
             {
                 "id": 4,
-                "company": "株式会社D",
-                "date": "2024/0x/xx~2024/xx/xx",
-                "img": "files/sampleImage.jpg"
+                "company": "Flush Code Hack 2025",
+                "date": "2025/06/28~2025/07/06",
+                "img": "files/image4.jpg"
             },
             {
                 "id": 5,
-                "company": "株式会社E",
-                "date": "2024/0x/xx~2024/xx/xx",
-                "img": "files/sampleImage.jpg"
+                "company": "株式会社メンバーズ",
+                "date": "2025/08/04~2025/08/08",
+                "img": "files/image5.jpg"
             },
             {
                 "id": 6,
-                "company": "株式会社F",
-                "date": "2024/0x/xx~2024/xx/xx",
-                "img": "files/sampleImage.jpg"
+                "company": "株式会社ラクス",
+                "date": "2025/09/25~2025/09/27",
+                "img": "files/image6.jpg"
             }
         ]
     },
@@ -50,21 +50,38 @@
         "cards": [
             {
                 "id": 7,
-                "company": "株式会社G",
-                "date": "2024/0x/xx~2024/xx/xx",
-                "img": "files/sampleImage.jpg"
+                "company": "パーソルキャリア株式会社",
+                "date": "2025/09/03・2025/09/09",
+                "img": "files/image7.jpg"
             },
             {
                 "id": 8,
-                "company": "株式会社H",
-                "date": "2024/0x/xx~2024/xx/xx",
-                "img": "files/sampleImage.jpg"
+                "company": "株式会社f4samurai",
+                "date": "2025/09/04~2025/09/05",
+                "img": "files/image8.jpg"
             },
             {
                 "id": 9,
-                "company": "株式会社I",
-                "date": "2024/0x/xx~2024/xx/xx",
-                "img": "files/sampleImage.jpg"
+                "company": "株式会社ドワンゴ",
+                "date": "2025/09/16~2025/09/30",
+                "img": "files/image9.jpg"
+            }
+        ]
+    },
+    {
+        "slide": 4,
+        "cards": [
+            {
+                "id": 10,
+                "company": "株式会社ヴァル研究所",
+                "date": "2025/10/06~2025/12/12",
+                "img": "files/image10.jpg"
+            },
+            {
+                "id": 11,
+                "company": "Sky株式会社",
+                "date": "2025/04/01~2026/03/31 (随時開催)",
+                "img": "files/image11.jpg"
             }
         ]
     }
