@@ -1,47 +1,38 @@
 {
     "id": 7,
-    "company": "株式会社G",
-    "title": "Gサマーインターンシップ2024",
-    "description": "G株式会社のサマーインターンシップに参加しました。実際の業務に近い体験ができ、エンジニアとしてのスキルを磨くことができました。",
-    "url": "https://www.example.com/internship",
-    "date": "2024/0x/xx~2024/xx/xx",
+    "company": "パーソルキャリア株式会社",
+    "title": "パーソルキャリア選抜型インターンシップ2027 Sprinters",
+    "description": "転職サービス「doda」の技術基盤をテーマに，プロダクト・テクノロジー戦略や大規模開発メソッドを学ぶ選抜型2dayインターンシップに参加しました．トップエンジニアのメンターの支援を受けながら，チームでコードの修正・改善を行い，大規模プロダクト開発を経験しました．",
+    "url": "https://www.persol-career.co.jp/recruit/newgraduate/recruit-info/sprint/",
+    "date": "2025/09/03・2025/09/09",
     "location": "オンライン",
-    "explanation": "今回のインターンシップでは、フロントエンド、バックエンド、インフラの各分野で実際のプロジェクトを作成しました。",
+    "explanation": "チームで協力して，dodaの求人検索画面のコード改善，実際のプロダクト背景に基づいた修正テーマに取り組み，最終発表を行いました．",
     "image": [
-        "/files/portfolio.png",
-        "/files/blog.png",
-        "/files/portfolio.png"
+        "/files/image7.jpg"
     ],
     "list": [
-        "フロントエンド",
-        "バックエンド",
-        "インフラ"
+        "リーダー",
+        "バックエンド"
     ],
     "ingenuity": [
-        "チームでの協力",
-        "問題解決能力",
-        "コミュニケーションスキル"
+        "コミュニケーションを密に行う",
+        "ユーザー目線で考える"
     ],
     "hard": [
-        "時間内にタスクを完了する能力",
-        "新しい技術の習得",
-        "コードの品質向上"
+        "時間内に課題を終わらせること",
+        "大規模プロダクトを題材にしたため，コードベースの理解に苦労した"
     ],
     "learned": [
-        "実際のプロジェクトでの開発経験",
-        "最新の技術スタックの理解",
-        "チームでの効果的なコミュニケーション"
+        "実務に近い大規模システムの開発・改善の流れ",
+        "チームでの効果的なコミュニケーション",
+        "トップエンジニアから学んだ開発メソッド"
     ],
-    "github": "https://www.example.com/github/sample-internship",
+    "github": null,
     "links": [
         {
-            "name": "インターンシップ詳細ページ",
-            "url": "https://www.example.com/internship-details"
-        },
-        {
-            "name": "参加レポートブログ",
-            "url": "https://www.example.com/internship-blog"
+            "name": "「パーソルキャリア株式会社」公式サイト",
+            "url": "https://www.persol-career.co.jp/"
         }
     ],
-    "other": "※このページはGページです。"
+    "other": "※募集要項ページに公開されている情報をもとに作成しています．"
 }
